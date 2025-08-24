@@ -79,7 +79,7 @@ st.markdown("""
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('models/best_xgboost_model.pkl')
+        model = joblib.load('models/other/best_xgboost_model.pkl')
         return model
     except FileNotFoundError:
         st.error("Model file not found at 'models/xgb_best.joblib'. Please ensure the model file exists.")
